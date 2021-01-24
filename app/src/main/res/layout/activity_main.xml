@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_get_posts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_obtener_datos" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txt_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/id_buscar"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_get_post"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/btn_obtener_dato" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_habilitar_datos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_habilitar_envio" />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lnl_datos"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/txt_id_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/txt_id"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/txt_userid_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/txt_user_id"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/txt_title_add"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:gravity="start"
+            android:hint="@string/txt_title"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/txt_body_add"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:autofillHints=""
+            android:gravity="start"
+            android:hint="@string/txt_body"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btn_agregar_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_enviar" />
+
+    </LinearLayout>
+
+</LinearLayout>
